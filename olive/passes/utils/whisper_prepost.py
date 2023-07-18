@@ -10,6 +10,7 @@ import numpy.typing as npt
 import onnx
 import torch
 from onnx import numpy_helper
+from onnx import ModelProto, helper
 from onnxruntime_extensions import PyOrtFunction, util
 from onnxruntime_extensions.cvt import HFTokenizerConverter
 
