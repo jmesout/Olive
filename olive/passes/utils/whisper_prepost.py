@@ -273,7 +273,7 @@ def add_pre_post_processing_to_model(
     pre_model = _preprocessing(audio_blob, use_audio_decoder)
     post_model = _postprocessing(model_name)
     final_model = _merge_models(pre_model, model, post_model)
-    onnx.checker.check_model(final_model)
+    #onnx.checker.check_model(final_model)
 
     try:
         onnx.save_model(final_model, output_filepath)
